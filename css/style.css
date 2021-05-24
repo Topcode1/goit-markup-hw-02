@@ -1,10 +1,75 @@
-/* Цвет подвала и background героя #2F303A */
+
+
+
+
 /* Цвет background фона #E5E5E5 */
 /* Цвет акцент  #2196F3 */
-/* Цвет background comanda #F5F4FA */
-/* Цвет контактов и футере rgba(255, 255, 255, 0.6); */
+/* Цвет background втроричный #F5F4FA */
+/* Цвет контактов шапки и футера rgba(255, 255, 255, 0.6); */
 /* 
-Основной цвет headers #212121
+Основной цвет заголовков #212121
 Основной цвет <p> #757575
 Цвет <h1> #ffffff
+Цвет background header #FFFFFF
 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text: #2196F3;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+  }  
+
+.logo {
+  color: var(--title-text-color);
+}
+
+.logo:hover {
+  color: var(--accent-text);
+}
+
+/* Site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+  color: var(--accent-text);
+}
+
+.auth-nav .list {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link:hover, 
+.auth-nav .link:focus {
+  color: var(--accent-text);
+}
+
+/* Hero */
+
+.hero-title {
+  color: #ffffff;
+}
+
+/* Section */
+
+.section-title {
+color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
